@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-backend-devops
+  namespace: haproxy-controller-devops
+  labels:
+    app:  ingress-default-backend
+spec:
+  selector:
+    app: service-backend-devops
+  type: ClusterIP
+  sessionAffinity: None
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  ports:
+  - name: port-backend
+    protocol: TCP
+    port: 8080
+    targetPort: 8080
+    # If you set the `spec.type` field to `NodePort` and you want a specific port number,
+    # you can specify a value in the `spec.ports[*].nodePort` field.
+  
