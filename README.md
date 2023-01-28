@@ -1,6 +1,8 @@
 # Deploy-Haproxy-App-on-Kubernetes
 setup a HaProxy app on Kubernetes cluster
+
 steps:
+
 1- Create a namespace haproxy-controller-devops.
 
 2- Create a ServiceAccount haproxy-service-account-devops under the same namespace.
