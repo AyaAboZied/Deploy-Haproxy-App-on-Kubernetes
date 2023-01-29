@@ -57,3 +57,6 @@ be 32456. The second port name should be https, its port should be 443, protocol
 be TCP, targetPort should be 443 and nodePort should be 32567. The third port name
 should be stat, its port should be 1024, protocol should be TCP, targetPort should be 1024
 and nodePort should be 32678.
+
+![output](https://user-images.githubusercontent.com/68289149/215324430-f733b19a-29e1-4a0c-b537-a3b2a124257f.png)
+
